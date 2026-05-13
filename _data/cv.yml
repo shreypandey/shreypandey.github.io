@@ -4,7 +4,7 @@
     - name: Full Name
       value: Shrey Pandey
     - name: Current Role
-      value: Research Fellow at Microsoft Research
+      value: Open to ML / Agent Engineering roles
     - name: Email
       value: <a href="mailto:shreypandey1509@gmail.com">shreypandey1509@gmail.com</a>
     - name: Location
@@ -15,31 +15,43 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Research Fellow
-      institution: <b><a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a></b>
-      year: Jan 2024 - present
+    - title: Machine Learning Engineer
+      institution: <b><a href="https://www.coinbase.com/">Coinbase</a></b>
+      year: Jun 2025 - 2026
       location: Bengaluru, India
-      maindescription: Working on Conversational AI and AI Assisted Programming.
+      maindescription: Working on agentic systems for compliance.
       description:
-        - title: <b>CoPilot Agents</b>
+        - title: <b>Multi-Agent System for Compliance Investigations</b>
           contents:
-            - Leading the development of LLM-powered agents aimed at eliminating technical debt in large-scale codebases by automating software development tasks.
-            - Designing and implementing a dynamic AgentBuilder framework that generates agents based on customizable recipes, facilitating scalable automation of routine and complex coding operations.
-        - title: <a href="https://github.com/microsoft/PwR-NL2DSL"><b>Programming with Representation (PwR)</b></a>
-          contents: 
-            - This project focuses on conversational programming, enabling developers to write software using natural language instructions, decoupling the need for extensive domain and coding expertise, making software development accessible to a broader audience, including organizations and individuals without technical backgrounds. 
-            - Developed a system of conversational programming where natural language conversations are translated into a custom domain-specific language with built-in guardrails using LLMs, allowing users to build software easily.
-            - The DSL is then translated into Python code to run on JugalBandi-Manager, enabling seamless execution of user instructions.
-            - Checkout <a href="https://github.com/microsoft/PwR-Studio">PwR-Studio</a> and <a href="https://github.com/microsoft/PwR-NL2DSL">PwR-NL2DSL</a>.
-        - title: <a href="https://github.com/OpenNyAI/Jugalbandi-Manager"><b>JugalBandi - Manager</b></a>
+            - Built a production multi-agent compliance investigation system using an orchestrator, specialized LLM agents, MCP servers, and compliance policy documents to decide regulatory escalation, detect risk typologies, and generate analyst-ready narratives.
+            - Owned the architecture and development of a five-part production stack including analyst frontend, gateway, queue-based engine, investigation agents, and MCP servers.
+            - Reached <b>94% accuracy</b> on escalation decisions, <b>84%</b> on typology detection, and <b>80%</b> on overall narrative quality through analyst feedback loops, error analysis, and iterative prompt tuning.
+    - title: Research Fellow
+      institution: <b><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research</a></b>
+      year: Jan 2024 - May 2025
+      location: Bengaluru, India
+      maindescription: Worked across the LLM stack on AI-assisted programming and agentic systems for the public good.
+      description:
+        - title: <b>Auto Azure SDK Migration</b>
           contents:
-            - Leading the development and maintainence of the open source project - JB Manager, which aims to release and manage conversation bots built using PwR for non-profit usecases.
-            - JB Manager is responsible for providing multi tenant support, language and interaction medium agnostic conversation flow chatbots using finite state machines.
-            - Checkout JugalBandi - Manager <a href="https://github.com/OpenNyAI/Jugalbandi-Manager">here</a>.
-        - title: <b>Multi-Turn Conversational Information Retrieval</b>
+            - Developed an LLM-based framework to automate migration of Azure SDK code to the latest API version, achieving a 50% reduction in engineering effort and saving 30 person-months annually.
+            - Leveraged a hybrid approach combining symbolic code-graph analysis with LLM workflows and a refined knowledge base to streamline code generation.
+        - title: <a href="https://www.microsoft.com/en-us/research/project/pwr/"><b>Programming with Representations (PwR)</b></a>
           contents:
-           - Developed a conversational system to streamline the form-filling process using LLMs resulting in reducing inefficiency and user experience.
-           - The system dynamically guides users through follow-up questions, automatically selecting and filling the correct form from a pool of 15,000 options, significantly reducing manual effort.
+            - Designed PwR, an AI-assisted programming system enabling non-profits without in-house engineering teams to build and maintain custom software by describing requirements in natural language.
+            - Developed an LLM-based pipeline that transforms requirements into a custom domain-specific language (DSL), with a symbolic translation tool compiling the DSL into Python code. The DSL is also rendered as a visual workflow chart for transparency and easier iteration by non-technical users.
+            - Open-sourced under the JugalBandi initiative and used as the foundation for JugalBandi's chatbot use cases. Code at <a href="https://github.com/microsoft/PwR-Studio">microsoft/PwR-Studio</a>.
+        - title: <a href="https://jugalbandi.studio/"><b>JugalBandi</b></a>
+          contents:
+            - Led JugalBandi, an initiative built on PwR enabling non-tech organizations to develop and deploy LLM-powered conversational bots. Featured in <b>Satya Nadella</b>'s keynote talks.
+            - Led the design and development of <a href="https://github.com/OpenNyAI/Jugalbandi-Manager">JugalBandi-Manager</a>, a production runtime with a pluggable architecture for chat interfaces, LLM providers, vernacular language providers, and voice/TTS providers, with FSM-based conversation flows.
+            - Contributed to <a href="https://github.com/OpenNyAI/Jugalbandi-Studio-Engine">JugalBandi-Studio</a>, a web-based platform that transforms plain-language requirements into custom chatbots.
+            - Deployed at CPGRAMS, MySchemes, and Bandhu (housing), with the open-source platform adopted by additional government and civil society initiatives.
+        - title: <b>Dialog Systems for Government Services</b>
+          contents:
+            - Designed LLM-based dialog systems for government agencies including the Ministry of Law and Justice, Prime Minister's Office, and NeGD, enhancing citizens' access to public services.
+            - Built a dense retrieval pipeline with LLM-driven follow-up question generation to classify citizen queries against a 14,000+ form grievance taxonomy (CPGRAMS) and resolve ambiguity before filing.
+            - Developed supporting components including query rewriting, semantic search, and conversational hierarchical RAG for document-grounded responses.
     - title: Senior Data Science Engineer
       institution: <b><a href="https://en.wikipedia.org/wiki/Myntra">Myntra</a></b>
       year: Apr 2023 - Jan 2024
@@ -138,12 +150,15 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2024
+      title: Best Industry Paper, Runner-Up at ICPE 2024
+      maindescription: Awarded Best Industry Paper Runner-Up at the 15th ACM/SPEC International Conference on Performance Engineering for "Rethinking Complement Product Recommendations at Scale Using SIMD".
     - year: 2023
-      title: Best Long Paper Award - Convergence 23
-      maindescription: Recieved best long paper award in Flipkart internal Data Science conference - Convergence. 
+      title: Employee of the Year 2023 at Myntra
+      maindescription: Recipient of the Employee of the Year award for CY'22 at Myntra, recognised among 500+ engineers for contributions to scalability and cost optimisations in recommendation systems and search re-ranking. The award is given to one individual from the entire engineering department.
     - year: 2023
-      title: Annual Award 2023
-      maindescription: Recipient of the Annual Award for CY’22 at Myntra for contributions to scalability and cost optimizations in recommendation systems and search re-ranking. The award is given to one individual from the entire engineering department.
+      title: Best Long Paper Award at Convergence 2023
+      maindescription: Received the Best Long Paper Award at Convergence 2023, Flipkart's internal Data Science conference.
     - year: 2022
       title: Quarter Award JFM 2023
       maindescription: It is awarded for taking ownership, doing all it takes and driving impactful results with agility.
